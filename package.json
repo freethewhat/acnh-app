@@ -8,7 +8,7 @@
     "preview": "vite preview",
     "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore --fix src",
     "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "test:ci": "vitest run --coverage"
   },
   "dependencies": {
     "vue": "^3.2.37"
