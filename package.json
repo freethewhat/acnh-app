@@ -6,7 +6,9 @@
     "build": "vue-tsc --noEmit && vite build",
     "dev": "vite",
     "preview": "vite preview",
-    "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore --fix src"
+    "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore --fix src",
+    "test": "vitest",
+    "test:ci": "vitest run --coverage"
   },
   "dependencies": {
     "vue": "^3.2.37"
@@ -14,15 +16,20 @@
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.4",
     "@vitejs/plugin-vue": "^3.0.3",
+    "@vitest/coverage-c8": "^0.22.1",
+    "@vitest/ui": "^0.22.1",
     "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/eslint-config-typescript": "^11.0.0",
+    "@vue/test-utils": "^2.0.2",
     "eslint": "^8.22.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier-vue": "^4.2.0",
     "eslint-plugin-vue": "^9.3.0",
+    "happy-dom": "^6.0.4",
     "prettier": "^2.7.1",
     "typescript": "^4.6.4",
     "vite": "^3.0.7",
+    "vitest": "^0.22.1",
     "vue-tsc": "^0.39.5"
   },
   "type": "module"
