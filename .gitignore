@@ -25,3 +25,5 @@ coverage
 *.sw?
 
 .env.development
+
+images

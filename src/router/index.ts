@@ -1,10 +1,22 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
-import AboutView from '../views/AboutView.vue';
-import HomeView from '../views/HomeView.vue';
+import { RouteRecordRaw } from 'vue-router';
 
-const routes = [
-  { path: '/', name: 'Home', component: HomeView },
-  { path: '/about', name: 'About', component: AboutView },
+const routes: Array<RouteRecordRaw> = [
+  { path: '/', name: 'Home', component: () => import('../views/HomeView.vue') },
+  { path: '/about', name: 'About', component: () => import('../views/AboutView.vue') },
+  {
+    path: '/museum',
+    name: 'Museum',
+    redirect: '/museum/fish',
+    component: () => import('../views/MuseumView.vue'),
+    children: [
+      {
+        path: '/museum/:sourceSheet',
+        name: 'MuseumList',
+        component: () => import('../components/museum/MuseumList.vue'),
+      },
+    ],
+  },
 ];
 
 console.log(import.meta.env.MODE);

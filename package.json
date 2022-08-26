@@ -14,6 +14,7 @@
     "@ionic/pwa-elements": "^3.1.1",
     "@ionic/vue": "^6.2.3",
     "@ionic/vue-router": "^6.2.3",
+    "animal-crossing": "^8.2.0",
     "vue": "^3.2.37",
     "vue-router": "^4.1.3"
   },
@@ -25,6 +26,7 @@
     "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/eslint-config-typescript": "^11.0.0",
     "@vue/test-utils": "^2.0.2",
+    "acnh-images": "^2.5.0",
     "eslint": "^8.22.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier-vue": "^4.2.0",
@@ -34,7 +36,9 @@
     "typescript": "^4.6.4",
     "vite": "^3.0.7",
     "vitest": "^0.22.1",
-    "vue-tsc": "^0.39.5"
+    "vue-tsc": "^0.39.5",
+    "bun-types": "^0.1.0"
   },
-  "type": "commonjs"
+  "type": "module",
+  "module": "index.ts"
 }

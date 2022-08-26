@@ -9,11 +9,15 @@
       <ion-list>
         <ion-item href="/">
           <ion-icon slot="start" :icon="mail"></ion-icon>
-          <ion-label>Home</ion-label>
+          <ion-label name="IonLabel">Home</ion-label>
         </ion-item>
-        <ion-item href="about">
+        <ion-item href="/about">
           <ion-icon slot="start" :icon="help"></ion-icon>
           <ion-label>About</ion-label>
+        </ion-item>
+        <ion-item href="/museum">
+          <ion-icon slot="start" :icon="build"></ion-icon>
+          <ion-label>Museum</ion-label>
         </ion-item>
       </ion-list>
     </ion-content>
@@ -33,7 +37,7 @@ import {
   IonToolbar,
 } from '@ionic/vue';
 
-import { help, mail } from 'ionicons/icons';
+import { help, mail, build } from 'ionicons/icons';
 </script>
 
 <style scoped></style>
